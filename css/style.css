@@ -9,9 +9,9 @@ li {
 .button {
   width: 113px;
   height: 43px;
-  background-color: rgba(210, 225, 255, 1);
+  background-color: #d2e1ff;
   border: none;
-  color: rgba(58, 121, 255, 1)
+  color: #3a79ff;
 }
 
 .header {
@@ -24,7 +24,6 @@ li {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
 
 .header__menu_link-container-list {
   display: grid;
