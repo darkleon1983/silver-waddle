@@ -1,3 +1,7 @@
+$desktop-width: 1041px;
+$tablet-width: 769px;
+$mobile-widht: 768px;
+
 body {
   font-family: Quicksand;
 }
@@ -11,18 +15,33 @@ li {
   height: 43px;
   background-color: rgba(210, 225, 255, 1);
   border: none;
-  color: rgba(58, 121, 255, 1)
+  color: rgba(58, 121, 255, 1);
+  font-size: 13px;
 }
 
 .header {
+  //outline: 1px solid red;
   display: grid;
   grid-template-columns: 50% 40%;
   justify-content: space-between;
+  padding: 0 35px;
+  line-height: 15px;
+  font-size: 12px;
 }
 
 .header__menu_link {
+  //outline: 1px solid green;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+}
+
+.header__menu_link-logo {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: start;
+  align-self: center;
+  //outline: 1px solid orange;
 }
 
 
@@ -31,20 +50,43 @@ li {
   grid-template-columns: repeat(5, auto);
   justify-content: space-between;
   gap: 42px;
+  //outline: 1px solid red;
+
+  @media (max-width: $desktop-width) {
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    //grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
+    align-self: center;
+    gap: 10px;
+  }
+}
+
+.header_link-container-list_item {
+  //outline: 1px solid yellow;
+  text-align: center;
 }
 
 .header__menu_social {
+ //outline: 1px solid orange;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
 .header__menu_social_links-list {
+  //outline: 1px solid red;
   display: grid;
   grid-template-columns: repeat(4, auto);
+
+  @media (max-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+
+  }
 }
 
 .header__menu_social_button {
+  //outline: 1px solid green;
   display: grid;
-  align-items: start;
+  justify-content: center;
   align-self: center;
 }
